@@ -16,7 +16,6 @@ public class SecTest {
     @ParameterizedTest
     @DisplayName("Testing sec(x) on dots where the result is NaN")
     @ValueSource(doubles = {Math.PI / 2, 3 * Math.PI / 2})
-    @Disabled
     void sec_shouldThrowIllegalArgumentException(double dot) {
         assertThrows(IllegalArgumentException.class, () -> Sec.sec(dot));
     }

@@ -28,6 +28,7 @@ public class Human {
             this.feeling = Feeling.CHOCKING;
             return true;
         }
+        this.feeling = null;
         return false;
     }
 
